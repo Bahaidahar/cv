@@ -1,5 +1,6 @@
+import { MyLink } from "@/shared/ui/Link";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+
 import React from "react";
 
 const Navs = () => {
@@ -13,7 +14,7 @@ const Navs = () => {
       <ul className=" flex gap-3">
         {navs.map((nav) => (
           <li key={nav.id}>
-            <Link href={`/${nav.name}`}>{nav.name}</Link>
+            <MyLink href={`/${nav.name}`} text={nav.name} />
           </li>
         ))}
       </ul>

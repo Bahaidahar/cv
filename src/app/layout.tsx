@@ -1,7 +1,9 @@
-export default function RootLayout({
+import "./[locale]/globals.css";
+
+export default function LocaleLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return children;
 }
